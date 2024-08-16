@@ -7,7 +7,7 @@ setwd("D:\\R\\data\\subtypes")
 #read output of computeNeiGojobori.py
 df=read.csv("tick_nt_0.98_al_ORF_codon.fas_dnds.txt")
 #calculate raw dn/ds ratio
-df$ratio_dnds=(df[,4]/df[,3])
+df$ratio_dnds=(df[,8]/df[,7])
 #format table, generate a three column table 
 dnds=as.data.frame(cbind(as.character(df$name1), as.character(df$name2), as.numeric(df$ratio_dnds)))
 colnames(dnds)=c("id1", "id2", "dnds_ratio")
