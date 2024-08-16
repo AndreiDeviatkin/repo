@@ -49,6 +49,6 @@ ggplot(combo, aes(ratio, fill = status)) + geom_histogram(alpha = 0.8, binwidth 
     axis.ticks.length=unit(.25, "cm"),
     plot.background=element_rect(fill = "white"),
     panel.background = element_rect(fill = "white")
-    )+  geom_vline(xintercept = 0.37, linetype="dashed",
+    )+  geom_vline(xintercept = 0.11, linetype="dashed",
              color = "black", linewidth=1.5)+
   theme(legend.position = "none")
