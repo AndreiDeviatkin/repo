@@ -30,14 +30,14 @@ intra2=data.frame(as.numeric(intraspecies$dnds_ratio))
 intra2$status <- 'intraspecies'
 inter2=data.frame(as.numeric(interspecies$dnds_ratio))
 inter2$status <- 'interspecies'
-colnames(inter2)=c("Nei-Gojobory dN/dS ratios", "status")
-colnames(intra2)=c("Nei-Gojobory dN/dS ratios", "status")
+colnames(inter2)=c("Nei-Gojobori dN/dS ratios", "status")
+colnames(intra2)=c("Nei-Gojobori dN/dS ratios", "status")
 combo <- rbind(inter2, intra2)
 
 
 #generate a plot demonstrating the distribution of pairwise dn/ds distances
-ggplot(combo, aes(`Nei-Gojobory dN/dS ratios`, fill = status)) + geom_histogram(alpha = 0.8, binwidth = 0.001)+  
-  scale_x_continuous(expand = c(0, 0),limits = c(0, max(combo$`Nei-Gojobory dN/dS ratios`)*1.05), breaks= pretty_breaks())+
+ggplot(combo, aes(`Nei-Gojobori dN/dS ratios`, fill = status)) + geom_histogram(alpha = 0.8, binwidth = 0.001)+  
+  scale_x_continuous(expand = c(0, 0),limits = c(0, max(combo$`Nei-Gojobori dN/dS ratios`)*1.05), breaks= pretty_breaks())+
   scale_y_continuous(expand = c(0, 0), 
   breaks= pretty_breaks())+
   theme(
