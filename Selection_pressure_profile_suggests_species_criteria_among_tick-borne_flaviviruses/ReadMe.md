@@ -7,11 +7,15 @@ Data and code for "Selection pressure profile suggests species criteria among ti
 
 `data/codon_based_alignments` - amino acid alignments of ORF, NS3, and E for MBFV and TBFV.
 
+`data/pairwise_dnds_tables`  - tables with pairwise Nei-Gojobori and Yang-Nielsen dN/dS values
+
 `scripts/distance_visualization_intra_inter.r ` - visualization of uncorrected pairwise distances for nucleotide and amino acid sequences.
 
 `scripts/computeNeiGojobori.py` - calculation of Nei-Gojobori dN/dS.
 
 `scripts/dnds_hist.r` - visualization of Nei-Gojobori dN/dS.
+
+`scripts/dnds_hist_sup.r` - visualization of Yang-Nielsen dN/dS.
 
 `scripts/dnds_tree.r` - cladogram based on pairwise Nei-Gojobori dN/dS ratio using neighbour-joining algorithm.
 
