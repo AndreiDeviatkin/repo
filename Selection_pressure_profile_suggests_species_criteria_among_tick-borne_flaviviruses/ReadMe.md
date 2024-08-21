@@ -11,6 +11,7 @@ Scripts:
 - `scripts/distance_visualization_intra_inter.r ` - visualization of uncorrected pairwise distances for nucleotide and amino acid sequences.
 - `scripts/computeNeiGojobori.py` - calculation of Nei-Gojobori dN/dS.
 - `scripts/dnds_hist.r` - visualization of Nei-Gojobori dN/dS.
-- `scripts/dnds_hist_sup.r` - visualization of Yang-Nielsen dN/dS.
+- `scripts/parse_yn00.py` - parsing of yn00.exe output to produce a table with pairwise Yang-Nielsen dN/dS values.
+- `scripts/dnds_hist_sup.r` - visualization of pairwise Yang-Nielsen dN/dS.
 - `scripts/dnds_tree.r` - cladogram based on pairwise Nei-Gojobori dN/dS ratio using neighbour-joining algorithm.
 
