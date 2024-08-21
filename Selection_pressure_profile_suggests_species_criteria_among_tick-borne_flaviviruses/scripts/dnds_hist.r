@@ -30,8 +30,8 @@ intra2=data.frame(as.numeric(intraspecies$dnds_ratio))
 intra2$status <- 'intraspecies'
 inter2=data.frame(as.numeric(interspecies$dnds_ratio))
 inter2$status <- 'interspecies'
-colnames(inter2)=c("Nei-Goiobory dN/dS ratios", "status")
-colnames(intra2)=c("Nei-Goiobory dN/dS ratios", "status")
+colnames(inter2)=c("Nei-Gojobory dN/dS ratios", "status")
+colnames(intra2)=c("Nei-Gojobory dN/dS ratios", "status")
 combo <- rbind(inter2, intra2)
 
 
